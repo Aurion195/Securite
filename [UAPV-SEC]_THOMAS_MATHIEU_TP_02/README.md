@@ -11,11 +11,11 @@ Create a steganographie module who allows to encrypt and decrypt message in pict
 
 When you want to encrypt message in the pictures you have 3 solutions :
 
-<li>
-        <ul>-w -t "some text"</ul>
-        <ul>-w -f PATH_TO_FILENAME</ul>
-        <ul>-w (and the program ask you the message)</ul>
-</li>
+<ul>
+        <li>-w -t "some text"</li>
+        <li>-w -f PATH_TO_FILENAME</li>
+        <li>-w (and the program ask you the message)</li>
+</ul>
 
 When you want decrypt the message in the picture you don't anythings, just run the command like that :
 
