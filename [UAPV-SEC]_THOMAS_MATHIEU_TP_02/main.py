@@ -42,7 +42,7 @@ def readFunction() :
     Returns:
             [char]: the message decrypt in the picture
     """
-    file = png.Reader(filename="output.png")
+    file = png.Reader(filename = "output.png")
     width, height, pixels, info = file.asRGBA8()
     new_pixels = [format(px, "08b") for row in pixels for px in row]
     
@@ -93,7 +93,7 @@ def writeFunction(textToWrite) :
     
     texteBin = convertTextToBinary(textToWrite)
     #Open file with png
-    file = png.Reader(filename="Homer.png")
+    file = png.Reader(filename = "Homer.png")
     width, height, pixels, info = file.asRGBA8()
     del info['palette']
     
@@ -141,9 +141,9 @@ def parser() :
     """
     
     parser = argparse.ArgumentParser()
-    parser.add_argument('-w', help='write a message in picture', action="store_true")
-    parser.add_argument('-f', help='path of filename to find some text')
-    parser.add_argument('-t', help='"some text"')
+    parser.add_argument('-w', help = 'write a message in picture', action = "store_true")
+    parser.add_argument('-f', help = 'path of filename to find some text')
+    parser.add_argument('-t', help = '"some text"')
     args = parser.parse_args()
     route(args)
 
