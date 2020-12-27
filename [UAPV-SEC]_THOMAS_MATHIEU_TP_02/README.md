@@ -5,6 +5,7 @@ Module de steganographie
 ## Goal
 Create a steganographie module who allows to encrypt and decrypt message in picture
 > Date : 27/12/2020
+
 > version : 1
 
 # How to use module
